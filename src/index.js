@@ -7,13 +7,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyC-LrIPvadwS22VLcSKGSVUqwGmOU-s5pg",
-    authDomain: "gndr-reveal.firebaseapp.com",
-    databaseURL: "https://gndr-reveal.firebaseio.com",
-    projectId: "gndr-reveal",
-    storageBucket: "gndr-reveal.appspot.com",
-    messagingSenderId: "83788529766",
-    appId: "1:83788529766:web:0f814e4d10f5810c106da7"
+    apiKey: process.env.REACT_APP_FIREBASE_CONFIG_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_CONFIG_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_CONFIG_DATABASE_URL,
+    projectId: process.env.REACT_APP_FIREBASE_CONFIG_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_CONFIG_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_CONFIG_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_CONFIG_MESSAGING_SENDER_ID
 };
 
 // Initialize Firebase
